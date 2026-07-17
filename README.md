@@ -1,195 +1,194 @@
-# 📊 Statistics and Probability for Data Science
+# 📊 Probability Foundations with Python
 
-A collection of beginner-friendly Python projects that demonstrate the fundamental concepts of **Statistics** and **Probability** used in **Data Science**, **Machine Learning**, and **Data Analysis**.
-
-This repository is designed as a learning resource and portfolio project, featuring practical implementations using **Python**, **NumPy**, **Pandas**, and **SciPy**.
+A beginner-friendly Python project that demonstrates fundamental probability concepts using **Python** and **Pandas** through a simple customer purchase dataset.
 
 ---
 
-# 📖 About
+## 📖 Overview
 
-Statistics and Probability form the mathematical foundation of Data Science. This repository contains hands-on implementations of essential statistical concepts through simple, well-documented Python programs.
+This project explores basic probability concepts by analyzing customer purchase behavior for coffee and pastries. It demonstrates how probability can be calculated from real-world data using Python.
 
-Each project explains the underlying theory and demonstrates its implementation using real-world examples.
+### Concepts Covered
 
----
-
-# 🚀 Topics Covered
-
-## 📈 Descriptive Statistics
-
-- Mean
-- Median
-- Mode
-- Range
-- Variance
-- Standard Deviation
-- Percentiles
-- Quartiles
-
----
-
-## 📊 Probability
-
-- Sample Space
-- Events
 - Marginal Probability
 - Joint Probability
 - Conditional Probability
 - Complement Rule
 - Independent Events
-- Bayes' Theorem
 
 ---
 
-## 🎲 Probability Distributions
+## 🚀 Features
 
-- Binomial Distribution
-- Normal Distribution
-- Poisson Distribution
-- Uniform Distribution
-
----
-
-## 📉 Statistical Analysis
-
-- Z-Score
-- Correlation
-- Covariance
-- Hypothesis Testing
-- Confidence Intervals
+- Calculate the probability of customers buying coffee.
+- Calculate the probability of customers buying pastries.
+- Compute the joint probability of buying both coffee and pastry.
+- Calculate conditional probabilities:
+  - **P(Pastry | Coffee)**
+  - **P(Coffee | Pastry)**
+- Demonstrate why conditional probabilities are generally different.
+- Apply the complement rule to compute the probability that **at least one** of two independent customers buys a pastry.
+- Calculate the probability that **neither** customer buys a pastry.
 
 ---
 
-## 🔬 SciPy Statistics
-
-- Probability Mass Function (PMF)
-- Probability Density Function (PDF)
-- Cumulative Distribution Function (CDF)
-- Statistical Tests
-- Probability Calculations
-
----
-
-# 🛠 Technologies Used
+## 🛠 Technologies Used
 
 - Python 3
-- NumPy
 - Pandas
-- SciPy
-- Matplotlib (Future Projects)
 
 ---
 
-# 📚 Learning Objectives
+## 📂 Dataset
 
-This repository demonstrates how to:
+The dataset is created directly in the Python script.
 
-- Perform statistical analysis using Python
-- Calculate descriptive statistics
-- Understand probability concepts
-- Work with probability distributions
-- Standardize data using Z-Scores
-- Analyze data using SciPy
-- Build a strong mathematical foundation for Data Science and Machine Learning
+```python
+data = {
+    "customer_id": [1,2,3,4,5,6,7,8,9,10],
+    "bought_coffee": [1,1,0,1,0,1,1,0,1,0],
+    "bought_pastry": [1,0,1,1,0,0,1,0,1,0]
+}
+```
 
 ---
 
-# ▶️ Getting Started
+## 📐 Probability Concepts
 
-### Clone the repository
+### 1. Marginal Probability
+
+Probability of a single event occurring.
+
+Examples:
+
+- P(Coffee)
+- P(Pastry)
+
+---
+
+### 2. Joint Probability
+
+Probability that two events occur together.
+
+```
+P(Coffee ∩ Pastry)
+```
+
+---
+
+### 3. Conditional Probability
+
+Probability of an event occurring given another event has already occurred.
+
+Formula:
+
+```
+P(A | B) = P(A ∩ B) / P(B)
+```
+
+Examples:
+
+- P(Pastry | Coffee)
+- P(Coffee | Pastry)
+
+---
+
+### 4. Complement Rule
+
+Used to calculate the probability that **at least one** event occurs.
+
+```
+P(At least one) = 1 − P(Neither)
+```
+
+---
+
+## ▶️ How to Run
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/sumitmaurya11/Statistics_and_Probability.git
 ```
 
-### Navigate to the repository
+Navigate to the project directory:
 
 ```bash
 cd Statistics_and_Probability
 ```
 
-### Install dependencies
+Install the required package:
 
 ```bash
-pip install numpy pandas scipy matplotlib
+pip install pandas
 ```
 
-### Run any project
-
-Example:
+Run the program:
 
 ```bash
-cd Z_Score
-python z_score.py
+python "Probability Foundations.py"
 ```
 
 ---
 
-# 📌 Why This Repository?
+## 📷 Sample Output
 
-This repository was created to:
+```text
+========== Probability Analysis Module ==========
 
-- Practice Python for Data Science
-- Learn Statistics through coding
-- Understand Probability with practical examples
-- Build a strong GitHub portfolio
-- Prepare for Data Science and Machine Learning interviews
+P(Coffee) = 0.60
+P(Pastry) = 0.50
 
----
+P(Coffee ∩ Pastry) = 0.40
 
-# 🎯 Skills Demonstrated
+P(Pastry | Coffee) = 0.6667
+P(Coffee | Pastry) = 0.8000
 
-- Python Programming
-- Scientific Computing
-- Data Analysis
-- Statistical Computing
-- Probability Theory
-- NumPy
-- Pandas
-- SciPy
-- Code Documentation
-- Git & GitHub
+P(Pastry | Coffee) is not equal to P(Coffee | Pastry).
+
+P(at least one customer buys a pastry) = 0.7500
+P(neither customer buys a pastry) = 0.2500
+```
 
 ---
 
-# 📈 Future Additions
+## 📁 Project Structure
 
-- Bayesian Probability
-- Chi-Square Test
-- T-Test
-- ANOVA
-- Linear Regression
-- Correlation Analysis
-- Confidence Intervals
-- Sampling Techniques
-- Central Limit Theorem
-- Monte Carlo Simulation
-- Random Variables
-- Statistical Visualization
+```
+Statistics_and_Probability/
+│
+├── Probability Foundations.py
+├── README.md
+└── LICENSE
+```
 
 ---
 
-# 🤝 Contributions
+## 🎯 Learning Outcomes
 
-Contributions, suggestions, and improvements are welcome.
+Through this project, I practiced:
 
-If you'd like to improve this repository, feel free to fork it and submit a pull request.
+- Data analysis with Pandas
+- Fundamental probability concepts
+- Conditional probability
+- Complement rule
+- Independent events
+- Writing clean, well-documented Python code
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 **Sumit Maurya**
 
-- GitHub: https://github.com/sumitmaurya11
+GitHub: **[sumitmaurya11](https://github.com/sumitmaurya11)**
 
 ---
 
-# 📄 License
+## 📄 License
 
 This project is licensed under the MIT License.
 
 ---
 
-⭐ If you find this repository helpful, consider giving it a star.
+⭐ If you found this project helpful, consider giving the repository a star!
