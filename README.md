@@ -103,7 +103,7 @@ P(At least one) = 1 − P(Neither)
 Clone the repository:
 
 ```bash
-git clone https://github.com/sam-kush/probability-foundations.git
+git clone https://github.com/sumitmaurya11/probability-foundations.git
 ```
 
 Navigate to the project:
@@ -174,7 +174,7 @@ Through this project, I practiced:
 
 **Sumit Maurya**
 
-- GitHub: https://github.com/sam-kush
+- GitHub: https://github.com/sumitmaurya11
 
 ---
 
