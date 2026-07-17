@@ -1,12 +1,14 @@
 # 📊 Probability Foundations with Python
 
-A beginner-friendly Python project that demonstrates core probability concepts using **Pandas** and a simple customer purchase dataset.
+A beginner-friendly Python project that demonstrates fundamental probability concepts using **Python** and **Pandas** through a simple customer purchase dataset.
+
+---
 
 ## 📖 Overview
 
-This project analyzes customer purchase behavior by calculating different types of probabilities from a dataset containing coffee and pastry purchases.
+This project explores basic probability concepts by analyzing customer purchase behavior for coffee and pastries. It demonstrates how probability can be calculated from real-world data using Python.
 
-It covers:
+### Concepts Covered
 
 - Marginal Probability
 - Joint Probability
@@ -18,18 +20,19 @@ It covers:
 
 ## 🚀 Features
 
-- Calculate the marginal probability of buying coffee and pastry.
-- Compute the joint probability of customers buying both coffee and pastry.
+- Calculate the probability of customers buying coffee.
+- Calculate the probability of customers buying pastries.
+- Compute the joint probability of buying both coffee and pastry.
 - Calculate conditional probabilities:
-  - P(Pastry | Coffee)
-  - P(Coffee | Pastry)
-- Demonstrate that conditional probabilities are generally not equal.
-- Use the complement rule to calculate the probability that at least one of two independent customers buys a pastry.
-- Calculate the probability that neither customer buys a pastry.
+  - **P(Pastry | Coffee)**
+  - **P(Coffee | Pastry)**
+- Demonstrate why conditional probabilities are generally different.
+- Apply the complement rule to compute the probability that **at least one** of two independent customers buys a pastry.
+- Calculate the probability that **neither** customer buys a pastry.
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠 Technologies Used
 
 - Python 3
 - Pandas
@@ -38,7 +41,7 @@ It covers:
 
 ## 📂 Dataset
 
-The dataset is created directly in the code using a Python dictionary.
+The dataset is created directly in the Python script.
 
 ```python
 data = {
@@ -52,20 +55,20 @@ data = {
 
 ## 📐 Probability Concepts
 
-### Marginal Probability
+### 1. Marginal Probability
 
-Measures the probability of a single event.
+Probability of a single event occurring.
 
-Example:
+Examples:
 
 - P(Coffee)
 - P(Pastry)
 
 ---
 
-### Joint Probability
+### 2. Joint Probability
 
-Probability that both events occur simultaneously.
+Probability that two events occur together.
 
 ```
 P(Coffee ∩ Pastry)
@@ -73,12 +76,14 @@ P(Coffee ∩ Pastry)
 
 ---
 
-### Conditional Probability
+### 3. Conditional Probability
 
-Calculated using:
+Probability of an event occurring given another event has already occurred.
+
+Formula:
 
 ```
-P(A|B) = P(A ∩ B) / P(B)
+P(A | B) = P(A ∩ B) / P(B)
 ```
 
 Examples:
@@ -88,9 +93,9 @@ Examples:
 
 ---
 
-### Complement Rule
+### 4. Complement Rule
 
-Used to calculate the probability of at least one success.
+Used to calculate the probability that **at least one** event occurs.
 
 ```
 P(At least one) = 1 − P(Neither)
@@ -103,16 +108,16 @@ P(At least one) = 1 − P(Neither)
 Clone the repository:
 
 ```bash
-git clone https://github.com/sumitmaurya11/probability-foundations.git
+git clone https://github.com/sumitmaurya11/Statistics_and_Probability.git
 ```
 
-Navigate to the project:
+Navigate to the project directory:
 
 ```bash
-cd probability-foundations
+cd Statistics_and_Probability
 ```
 
-Install dependencies:
+Install the required package:
 
 ```bash
 pip install pandas
@@ -128,7 +133,7 @@ python "Probability Foundations.py"
 
 ## 📷 Sample Output
 
-```
+```text
 ========== Probability Analysis Module ==========
 
 P(Coffee) = 0.60
@@ -150,9 +155,11 @@ P(neither customer buys a pastry) = 0.2500
 ## 📁 Project Structure
 
 ```
-probability-foundations/
-│── Probability Foundations.py
-│── README.md
+Statistics_and_Probability/
+│
+├── Probability Foundations.py
+├── README.md
+└── LICENSE
 ```
 
 ---
@@ -161,12 +168,12 @@ probability-foundations/
 
 Through this project, I practiced:
 
-- Data manipulation with Pandas
-- Basic probability theory
+- Data analysis with Pandas
+- Fundamental probability concepts
 - Conditional probability
 - Complement rule
-- Python programming fundamentals
-- Writing clean and readable code
+- Independent events
+- Writing clean, well-documented Python code
 
 ---
 
@@ -174,8 +181,14 @@ Through this project, I practiced:
 
 **Sumit Maurya**
 
-- GitHub: https://github.com/sumitmaurya11
+GitHub: **[sumitmaurya11](https://github.com/sumitmaurya11)**
 
 ---
 
-⭐ If you found this project helpful, consider giving it a star!
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+⭐ If you found this project helpful, consider giving the repository a star!
